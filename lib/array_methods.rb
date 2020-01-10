@@ -4,11 +4,11 @@ end
 
 def find_max_value(array)
   counter = array[0]
-  for i in 1...array.length {
-    if array[i] > counter
-      counter = array[i]
+  (array.length - 1).times { |i|
+    if array[i+1] > counter
+      counter = array[i+1]
+    end
   }
-  (array.length - 1).times {
 end
 
 def find_min_value(array)
