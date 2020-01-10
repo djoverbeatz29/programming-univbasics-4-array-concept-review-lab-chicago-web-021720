@@ -8,6 +8,7 @@ def find_max_value(array)
     if array[i] > counter
       counter = array[i]
   }
+  (array.length - 1).times
 end
 
 def find_min_value(array)
